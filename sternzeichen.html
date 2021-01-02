@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+</head>
+<body>
+    <div><a href="index.html">zurück</a></div>
+    <div><h2 class="mitte">Your Zodiac Sign</h2></div>
+    <div><p class="mitte">Select your Birthday</p>
+        <form action="select.htm">
+            <p>
+            <select name="monat" id="monat" onchange="getMonth();" required="">
+            <option disabled="" selected="">Month</option>
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <option value="apr">April</option>
+            <option value="may">May</option>
+            <option value="jun">June</option>
+            <option value="jul">July</option>
+            <option value="aug">August</option>
+            <option value="sep">September</option>
+            <option value="okt">October</option>
+            <option value="nov">November</option>
+            <option value="dec">December</option>
+            </select>
+            </p>
+        </form>
+        <form>
+            <select name="tag" id="tag" onchange="getDay();" disabled required="">
+                <option disabled="" selected="">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+        </form>
+        <button id="submit" type="button" disabled>weiter</button>
+    </div>
+<div>
+    <div id="aquarius">
+        <h2>Aquarius</h2>
+        <p>WATER BEARER  |  JAN 20 - FEB 18</p>
+        <p>IMAGINATIVE, IDEALISTIC, INTUITIVE<br>
+            Element: Air<br>
+            Polarity: Positive<br>
+            Ruling Planet: Uranus<br>
+            Spirit Color: Sky blue<br>
+            Top Love Matches: Sagittarius<br>
+            Your Conspiracy Theory: Paul McCartney died in 1966<br>
+            Your Comfort Food: PB&J<br>
+            Magical Species: Elf<br>
+            Pokemon: Togepi<br>
+        </p>
+            <img src="bilder/aquariusmeme.jpg" class="bild">
+    </div>
+    <div id="pisces">
+        <h2>Pisces</h2>
+        <p>FISH  |  FEB 19 - MAR 20</p>
+        <p>CREATIVE, SENSITIVE, ARTISTIC<br>
+            Element: Water<br>
+            Polarity: Negative<br>
+            Ruling Planet: Neptune<br>
+            Spirit Color: Sea green<br>
+            Top Love Matches: Virgo<br>
+            Your Conspiracy Theory: Bush did 9/11<br>
+            Your Comfort Food: Hot Chocolate<br>
+            Magical Species: Mermaid<br>
+            Pokemon: Psyduck<br>
+        </p>
+            <img src="bilder/piscesmeme.jpg" class="bild">
+    </div>
+    <div id="aries">
+        <h2>Aries</h2>
+        <p>THE RAM  |  MAR 21 - APR 19</p>
+        <p>AMBITIOUS, INDEPENDENT, IMPATIENT. <br>
+            Element: Fire <br>  
+            Polarity: Positive <br> 
+            Ruling Planet: Mars <br> 
+            Spirit Color: Red <br> 
+            Top Love Matches: Sagittarius<br>
+            Your Conspiracy Theory: the CIA killed JFK<br>
+            Your Comfort Food: Grilled Cheese<br>
+            Magical Species: Zombie<br>
+            Pokemon: Charmander<br>
+        </p>
+            <img src="bilder/ariesmeme.jpg" class="bild"> 
+    </div>
+    <div id="taurus">
+        <h2>Taurus</h2>
+        <p>BULL  |  APR 20 - MAY 20</p>
+        <p>DEPENDABLE, MUSICAL, PRACTICAL <br>
+            Element: Earth <br>
+            Polarity: Negative <br>
+            Ruling Planet: Venus <br>
+            Spirit Color: Pink <br>
+            Top Love Matches: Cancer & Virgo<br>
+            Your Conspiracy Theory: the illuminati and the NWO<br>
+            Your Comfort Food: Pasta<br>
+            Magical Species: Werewolf<br>
+            Pokemon: Eevee<br>
+        </p>
+            <img src="bilder/taurusmeme.jpg" class="bild">
+    </div>
+    <div id="gemini">
+        <h2>Gemini</h2>
+        <p>TWINS  |  MAY 21 - JUN 20</p>
+        <p>CURIOUS, AFFECTIONATE, KIND <br>
+            Element: Air <br>
+            Polarity: Positive <br>
+            Ruling Planet: Mercury <br>
+            Spirit Color: Yellow <br>
+            Top Love Matches: Aries & Leo<br>
+            Your Conspiracy Theory: Elvis faked his own death<br>
+            Your Comfort Food: Tacos<br>
+            Magical Species: Dragon<br>
+            Pokemon: Mew<br>
+        </p>
+            <img src="bilder/geminimeme.jpg" class="bild">
+    </div>
+    <div id="cancer">
+        <h2>Cancer</h2>
+        <p>CRAB  |  JUN 21 - JUL 22</p>
+        <p>INTUITIVE, EMOTIONAL, INTELLIGENT, PASSIONATE <br>
+            Element: Water <br>
+            Polarity: Negative <br>
+            Ruling Planet: Moon <br>
+            Spirit Color: Violet <br>
+            Top Love Matches: Taurus & Pisces<br>
+            Your Conspiracy Theory: MK-ULTRA<br>
+            Your Comfort Food: Mashed Potatoes<br>
+            Magical Species: Griffin<br>
+            Pokemon: Pikachu<br>
+        </p>
+            <img src="bilder/cancermeme.jpg" class="bild">
+    </div>
+    <div id="leo">
+        <h2>Leo</h2>
+        <p>THE LION  |  JUL 23 - AUG 22</p>
+        <p>PROUD, BOLD, AMBITIOUS <br>
+           Element: Fire <br>
+           Polarity: Positive <br>
+           Ruling Planet: Sun <br>
+           Spirit Color: Gold <br>
+           Top Love Matches: Libra<br>
+           Your Conspiracy Theory: the moon landing was fake<br>
+           Your Comfort Food: Tater Tots<br>
+           Magical Species: Fairy<br>
+           Pokemon: Squirtle<br>
+        </p>
+            <img src="bilder/leomeme.jpg" class="bild">
+    </div>
+    <div id="virgo">
+        <h2>Virgo</h2>
+        <p>THE VIRGIN  |  AUG 23 - SEP 22</p>
+        <p>GRACEFUL, ORGANIZED, KIND <br>
+            Element: Earth <br>
+            Polarity: Negative <br>
+            Ruling Planet: Mercury <br>
+            Spirit Color: Silver <br>
+            Top Love Matches: Cancer<br>
+            Your Conspiracy Theory: the british government killed princess Diana<br>
+            Your Comfort Food: Soup<br>
+            Magical Species: Unicorn<br>
+            Pokemon: Celebi<br>
+        </p>
+            <img src="bilder/virgomeme.jpg" class="bild">
+    </div>
+    <div id="libra">
+        <h2>Libra</h2>
+        <p>THE SCALES  |  SEP 23 - OCT 22</p>
+        <p>DIPLOMATIC, ARTISTIC, INTELLIGENT <br>
+            Element: Air <br>
+            Polarity: Positive<br>
+            Ruling Planet: Venus<br>
+            Spirit Color: Blue<br>
+            Top Love Matches: Gemini<br>
+            Your Conspiracy Theory: the UFO landing in Roswell<br>
+            Your Comfort Food: Cheeseburgers<br>
+            Magical Species: Witch<br>
+            Pokemon: Vulpix<br>
+        </p>
+            <img src="bilder/librameme.jpg" class="bild">
+    </div>
+    <div id="scorpio">
+        <h2>Scorpio</h2>
+        <p>THE SCORPION  |  OCT 23 - NOV 21</p>
+        <p>SEDUCTIVE, PASSIONATE, INDEPENDENT<br>
+            Element: Water<br>
+            Polarity: Negative<br>
+            Ruling Planet: Pluto, Mars<br>
+            Spirit Color: Black<br>
+            Top Love Matches: Cancer<br>
+            Your Conspiracy Theory: Tupac is still alive<br>
+            Your Comfort Food: Chinese Takeout<br>
+            Magical Species: Vampire<br>
+            Pokemon: Gastly<br>
+        </p>
+            <img src="bilder/scorpiomeme.jpg" class="bild">
+    </div>
+    <div id="saggitarius">
+        <h2>Sagittarius</h2>
+        <p>THE ARCHER  |  NOV 22 - DEC 21</p>
+        <p>ADVENTUROUS, CREATIVE, STRONG WILLED<br>
+            Element: Fire<br>
+            Polarity: Positive<br>
+            Ruling Planet: Jupiter<br>
+            Spirit Color: Light Blue<br>
+            Top Love Matches: Aries<br>
+            Your Conspiracy Theory: HIV was created in a lab<br>
+            Your Comfort Food: Pie<br>
+            Magical Species: Mummy<br>
+            Pokemon: Poliwag<br>
+        </p>
+            <img src="bilder/sagittariusmeme.jpg" class="bild">
+    </div>
+    <div id="capricorn">
+        <h2>Capricorn</h2>
+        <p>THE GOAT  |  DEC 22 - JAN 19</p>
+        <p>DETAIL-ORIENTED, INTELLIGENT, HARDWORKING<br>
+            Element: Earth<br>
+            Polarity: Negative<br>
+            Ruling Planet: Saturn<br>
+            Spirit Color: Dark Blue<br>
+            Top Love Matches: Virgo<br>
+            Your Conspiracy Theory: Shakespeare didn't write his own plays<br>
+            Your Comfort Food: Ramen<br>
+            Magical Species: Ghost<br>
+            Pokemon: Bulbasaur<br>
+        </p>
+            <img src="bilder/capricornmeme.jpg" class="bild">
+    </div>
+    <div id="sandwich">
+        <h2>Idiot Sandwich</h2>
+        <p>THE IDIOT  |  that date doesn't exist</p>
+        <p>SIMPLE-MINDED, DENSE<br>
+        Element: Bread<br>
+        Polarity: none<br>
+        Ruling Planet: your Mum<br>
+        Spirit Color: Poop Brown<br>
+        Top Love Matches: Dimwit<br>
+        Your Conspiracy Theory: Zodiac Signs are bullshit<br>
+        Your Comfort Food: Leberkässemmel<br>
+        Magical Species: Bernd das Brot<br>
+        Pokemon: Magicarp<br>
+    </p>
+            <img src="bilder/sandwichmeme.gif" class="bild" width="80%">
+    </div>
+</div>
+</body>
+<script src="sternzeichen.js"></script>
+</html>

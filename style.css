@@ -1,0 +1,635 @@
+body {
+  background-color: thistle;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* menu bar */
+.menu {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  opacity: 0.8;
+  height: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  margin-top: 2%;
+}
+
+.menu ul li {
+  background: #262626;
+  width: 200px;
+  border: 1px solid #000;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  float: left;
+  /*position: relative;*/
+  color: #fff;
+  margin: 0px;
+  padding: 5px;
+}
+
+.menu ul li:hover {
+  background: crimson;
+}
+
+.menu ul li ul li {
+  display: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul li:hover ul li {
+  display: block;
+  /*background: #f87;*/
+}
+
+#platzhalter {
+  height: 5000px;
+  width: 300px;
+  background-color: darkmagenta;
+}
+
+select {
+  width: 100px;
+  height: 25px;
+  border: none;
+  margin: 16px auto;
+  display: block;
+}
+
+.horizontal {
+  float: left;
+}
+
+button {
+  margin: 16px auto;
+  width: auto;
+  display: block;
+  padding: 3px 15px;
+}
+
+#tag {
+  width: 50px;
+}
+
+#ctag {
+  width: 50px;
+}
+
+.mitte {
+  text-align: center;
+}
+
+.cmitte {
+  margin: auto;
+  display: block;
+  width: 320px;
+  height: 80px;
+}
+
+.bild {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+#mittelteil {
+  width: 100%;
+  height: 300px;
+}
+
+.rahmen {
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.quiz {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 50% 50%;
+}
+
+.header {
+  height: 90%;
+  width: 95%;
+  margin: auto;
+  background-color: red;
+  grid-column: 1/3;
+}
+
+.header h2 {
+  padding: 30px;
+}
+
+.option {
+  height: 90%;
+  width: 90%;
+  background-color: lightseagreen;
+  margin: auto;
+}
+
+.option > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.option:hover {
+  background-color: mediumaquamarine;
+  cursor: pointer;
+}
+
+.ergebnis {
+  width: 600px;
+  height: auto;
+  margin: 30px auto;
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.ergebnis > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.auswahllinks {
+  height: 600px;
+  width: 200px;
+  background-color: white;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 100%;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  float: left;
+}
+
+/*.auswahlrechts {
+    height: 600px;
+    width: 200px;
+    background-color: white;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    float: right;
+}*/
+
+/*die einzelnen Sternzeichen*/
+
+#aquarius {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  padding: 16px;
+  display: none;
+}
+
+#pisces {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#aries {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#taurus {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#gemini {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#cancer {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#leo {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#virgo {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#libra {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#scorpio {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#saggitarius {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#capricorn {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#sandwich {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+/*die chinesischen Sternzeichen*/
+
+#rat {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#ox {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#tiger {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#rabbit {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#dragon {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#snake {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#horse {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#sheep {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#monkey {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#rooster {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#dog {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+#pig {
+  height: auto;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+  display: none;
+  padding: 16px;
+}
+
+/*snacks*/
+#frage2 {
+  display: none;
+}
+
+#frage3 {
+  display: none;
+}
+
+#frage4 {
+  display: none;
+}
+
+#frage5 {
+  display: none;
+}
+
+#ergebnis1 {
+  display: none;
+}
+
+#ergebnis2 {
+  display: none;
+}
+
+#ergebnis3 {
+  display: none;
+}
+
+#ergebnis4 {
+  display: none;
+}
+
+/*generator*/
+#meme {
+  background-image: none;
+  height: 400px;
+  width: 600px;
+  background-color: white;
+  margin: 30px auto;
+  /*display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 50% 50%;*/
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Nonogram*/
+
+#grid {
+  background-color: tomato;
+  display: grid;
+  float: left;
+  justify-self: left;
+  align-self: start;
+  border: 1px black solid;
+}
+
+.cell {
+  height: 30px;
+  width: 30px;
+  background-color: blanchedalmond;
+  border: 1px salmon solid;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+#topgrid {
+  display: flex;
+  flex-direction: row;
+  grid-column: 2/3;
+  justify-self: left;
+  align-self: flex-end;
+}
+
+.rowtop {
+  display: flex;
+  flex-direction: column;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+#leftgrid {
+  float: left;
+  grid-row: 2/3;
+  justify-self: right;
+  align-self: start;
+}
+
+.rowleft {
+  display: flex;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+.nonowrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+/*Big 5*/
+
+.rahmen2 {
+  height: auto;
+  width: 600px;
+  background-color: white;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.rahmen2 form {
+  margin-bottom: 20px;
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: red;
+  border-radius: 12px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 12px;
+}
+
+/*about me*/
+
+.skill {
+  background: #fff;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid #0fffb7;
+  border-radius: 2px;
+}
+
+.skillLevel {
+  background: #0fffb7;
+  width: 100%;
+  height: 10px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.strich {
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fotoshow {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 5px;
+}
+
+.foto img {
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+}
+
+.foto:hover {
+  display: block;
+  transform: scale(2, 2);
+  transition-duration: 0.2s;
+}
+
+.topLeft {
+  transform-origin: top left;
+}
+
+.topRight {
+  transform-origin: top right;
+}
+
+.bottomLeft {
+  transform-origin: bottom left;
+}
+
+.bottomRight {
+  transform-origin: bottom right;
+}
