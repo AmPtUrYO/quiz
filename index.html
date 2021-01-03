@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brittas Projekt</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://use.fontawesome.com/7cae68f5b9.js"></script>
   </head>
   <body>
     <div class="menu">
+      <input type="checkbox" id="check" style="display: none" />
+      <label for="check"
+        ><i class="fa fa-bars fa-2x" aria-hidden="true" id="nav"></i
+      ></label>
+
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="cv.html">about me</a></li>
@@ -32,11 +42,64 @@
           <a href="index.html">just for fun</a>
           <ul class="sub">
             <li><a href="generator.html">Meme Generator</a></li>
+            <li><a href="comments.html">Comment Section</a></li>
           </ul>
         </li>
       </ul>
     </div>
-    <div id="platzhalter"></div>
+
+    <div class="box">
+      <div
+        class="background"
+        id="background1"
+        style="background-color: red"
+      ></div>
+      <div
+        class="background"
+        id="background2"
+        style="background-color: blue"
+      ></div>
+      <div
+        class="background"
+        id="background3"
+        style="background-color: yellow"
+      ></div>
+      <div
+        class="background"
+        id="background4"
+        style="background-color: green"
+      ></div>
+      <div
+        class="background"
+        id="background5"
+        style="background-color: rgb(210, 119, 238)"
+      ></div>
+      <div
+        class="background"
+        id="background6"
+        style="background-color: rgb(70, 198, 230)"
+      ></div>
+      <div
+        class="background"
+        id="background7"
+        style="background-color: rgb(235, 205, 74)"
+      ></div>
+      <div
+        class="background"
+        id="background8"
+        style="background-color: rgb(146, 53, 221)"
+      ></div>
+      <div
+        class="background"
+        id="background9"
+        style="background-color: rgb(255, 139, 31)"
+      ></div>
+      <div
+        class="background"
+        id="background10"
+        style="background-color: rgb(147, 238, 119)"
+      ></div>
+    </div>
   </body>
   <script src="main.js"></script>
 </html>
