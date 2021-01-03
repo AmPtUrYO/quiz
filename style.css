@@ -9,7 +9,7 @@ body {
   border: 1px solid black;
   margin: 1px;
   position: relative;
-  z-index: -1;
+  border-radius: 50%;
 }
 
 .box {
@@ -100,7 +100,7 @@ body {
     transition: all 0.5s;
     margin-left: -50px;
     margin-top: 0px;
-    z-index: 1;
+    padding-top: 30px;
   }
   .menu ul li {
     background: #000000;
@@ -120,6 +120,18 @@ body {
   }
   #check:checked ~ ul {
     left: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .rahmen {
+    max-width: 95%;
+  }
+  .rahmen2 {
+    max-width: 95%;
+  }
+  .ergebnis {
+    max-width: 95%;
   }
 }
 
