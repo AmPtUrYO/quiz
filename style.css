@@ -85,6 +85,8 @@ body {
   padding: 9px;
 }
 
+/*Anpassen auf kleinere Bildschirme*/
+
 @media only screen and (max-width: 1120px) {
   #nav {
     display: block;
@@ -565,7 +567,7 @@ button {
 /*Nonogram*/
 
 #grid {
-  background-color: tomato;
+  background-color: blanchedalmond;
   display: grid;
   float: left;
   justify-self: left;
@@ -576,7 +578,7 @@ button {
 .cell {
   height: 30px;
   width: 30px;
-  background-color: blanchedalmond;
+  /*background-color: blanchedalmond;*/
   border: 1px salmon solid;
 }
 
