@@ -623,6 +623,59 @@ button {
   grid-template-columns: auto auto;
 }
 
+/*Sudoku*/
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 250px;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+#number-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#number-container p {
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.tile {
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  margin: 0px;
+}
+
+p.selected {
+  background-color: aquamarine;
+}
+
+.rightBorder {
+  border-right: 3px solid black;
+}
+
+.bottomBorder {
+  border-bottom: 3px solid black;
+}
+
+#easy #medium #hard {
+  display: none;
+}
+
 /*Big 5*/
 
 .rahmen2 {
