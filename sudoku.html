@@ -10,18 +10,31 @@
     <a href="index.html">zurück</a>
     <h1 class="mitte">Sudoku</h1>
     <div class="rahmen">
-      <div>
-        <input type="radio" id="easy" onchange="startGame(easy)" name="diff" />
-        <label for="easy">easy</label>
+      <div class="diff">
+        <input
+          type="radio"
+          id="easy"
+          onchange="startGame(easy)"
+          name="diff"
+          class="hidden"
+        />
+        <label for="easy" class="label">easy</label>
         <input
           type="radio"
           id="medium"
           onchange="startGame(medium)"
           name="diff"
+          class="hidden"
         />
-        <label for="medium">medium</label>
-        <input type="radio" id="hard" onchange="startGame(hard)" name="diff" />
-        <label for="hard">hard</label>
+        <label for="medium" class="label">medium</label>
+        <input
+          type="radio"
+          id="hard"
+          onchange="startGame(hard)"
+          name="diff"
+          class="hidden"
+        />
+        <label for="hard" class="label">hard</label>
       </div>
       <div id="board"></div>
       <div id="number-container">
@@ -34,6 +47,7 @@
         <p id="seven">7</p>
         <p id="eight">8</p>
         <p id="nine">9</p>
+        <p id="clear"></p>
       </div>
     </div>
   </body>

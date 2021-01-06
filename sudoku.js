@@ -3,7 +3,7 @@ const easy = [
   "685329174971485326234761859362574981549618732718293465823946517197852643456137298",
 ];
 const medium = [
-  "--9-------4----6-758-31----15--4-36-------4-8----9-------75----3-------1--2--3--",
+  "--9-------4----6-758-31----15--4-36-------4-8----9-------75----3-------1--2--3--5",
   "619472583243985617587316924158247369926531478734698152891754236365829741472163895",
 ];
 const hard = [
@@ -26,7 +26,7 @@ function startGame(diff) {
           this.classList.remove("selected");
           selectedNum = null;
         } else {
-          for (let i = 0; i < 9; i++) {
+          for (let i = 0; i < 10; i++) {
             id("number-container").children[i].classList.remove("selected");
           }
           this.classList.add("selected");
@@ -90,11 +90,12 @@ function updateMove() {
       qsa(".tile")[i].classList.remove("selected");
       selectedTile = null;
     }
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
       id("number-container").children[i].classList.remove("selected");
       selectedNum = null;
     }
   }
+  //add win function
 }
 
 function clearPrevious() {

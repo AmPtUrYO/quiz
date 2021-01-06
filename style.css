@@ -117,7 +117,7 @@ body {
     width: 100%;
     text-align: center;
     /*left: 0px;*/
-    margin-top: auto;
+    margin-top: 0px;
     margin-left: 500px;
   }
   #check:checked ~ ul {
@@ -631,7 +631,7 @@ button {
   height: auto;
   width: 250px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 20px;
 }
 
@@ -648,8 +648,9 @@ button {
   vertical-align: middle;
   font-weight: bold;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .tile {
@@ -661,7 +662,7 @@ button {
 }
 
 p.selected {
-  background-color: aquamarine;
+  background-color: pink;
 }
 
 .rightBorder {
@@ -672,11 +673,21 @@ p.selected {
   border-bottom: 3px solid black;
 }
 
-#easy #medium #hard {
+.hidden {
   display: none;
 }
 
-/*Big 5*/
+.label {
+  border: 2px solid black;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.diff {
+  padding: 10px;
+}
+
+/*Personality Test*/
 
 .rahmen2 {
   height: auto;
