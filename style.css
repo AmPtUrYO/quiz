@@ -786,10 +786,50 @@ img {
   transform-origin: bottom right;
 }
 
+.topMiddle {
+  transform-origin: top center;
+}
+
+.bottomMiddle {
+  transform-origin: bottom center;
+}
+
 /*Comment Section*/
 
 textarea {
   width: 100%;
   height: 100px;
   margin-top: 20px;
+}
+
+/*Favorites*/
+
+.series {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.gridRight {
+  justify-self: end;
+}
+
+.gridLeft {
+  justify-self: start;
+}
+
+.music {
+  display: grid;
+  grid-template-columns: 15% 35% 15% 35%;
+  align-content: center;
+}
+
+.music p {
+  align-self: center;
+}
+
+.fotoshow2 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 5px;
 }
