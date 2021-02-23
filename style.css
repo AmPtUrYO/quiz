@@ -15,7 +15,7 @@ body {
 .box {
   margin-top: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .background:hover {
