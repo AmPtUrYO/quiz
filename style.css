@@ -802,6 +802,24 @@ textarea {
   margin-top: 20px;
 }
 
+.comments{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-bottom: solid black 3px;
+  gap: 5px;
+}
+
+.commentName{
+font-weight: bold;
+}
+.commentTime{
+
+}
+
+.commentText{
+  grid-column: span 2;
+}
+
 /*Favorites*/
 
 .series {

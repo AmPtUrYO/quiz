@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comment Section</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
   </head>
   <body>
     <a href="index.html">zurück</a>
@@ -18,6 +20,32 @@
         <button id="submit" onclick="comment()">submit</button>
       </form>
     </div>
+    <div class="rahmen2">
+<div id="commentList"></div>
+
+    </div>
+
   </body>
-  <script src="comments.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA_E3xKvrendBIFOb6OOTMnFA9Zy7Myp4U",
+    authDomain: "quiz-725c0.firebaseapp.com",
+    databaseURL: "https://quiz-725c0.firebaseio.com",
+    projectId: "quiz-725c0",
+    storageBucket: "quiz-725c0.appspot.com",
+    messagingSenderId: "512619039903",
+    appId: "1:512619039903:web:2361590c762e25161ba6aa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+</script>
+<script src="comments.js">
+  
+</script>
 </html>
