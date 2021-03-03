@@ -41,7 +41,7 @@ body {
   cursor: url("/bilder/paintbrush.cur"), pointer;
 }
 
-#love {
+#heart {
   cursor: pointer;
 }
 
@@ -61,10 +61,6 @@ body {
   transform: translate(-150px, -150px);
 }
 
-.mouseHearts {
-  cursor: wait;
-}
-
 .pointer {
   position: absolute;
   top: 50%;
@@ -76,36 +72,47 @@ body {
   box-sizing: border-box;
   transition: 0.2s;
   color: rgb(221, 2, 122);
+  font-weight: bold;
 }
 .pointer1 {
   transition: 0.05s;
+  font-size: 5px;
 }
 .pointer2 {
   transition: 0.1s;
+  font-size: 10px;
 }
 .pointer3 {
   transition: 0.15s;
+  font-size: 15px;
 }
 .pointer4 {
   transition: 0.2s;
+  font-size: 20px;
 }
 .pointer5 {
   transition: 0.25s;
+  font-size: 25px;
 }
 .pointer6 {
   transition: 0.3s;
+  font-size: 30px;
 }
 .pointer7 {
   transition: 0.35s;
+  font-size: 35px;
 }
 .pointer8 {
   transition: 0.4s;
+  font-size: 50px;
 }
 .pointer9 {
   transition: 0.45s;
+  font-size: 45px;
 }
 .pointer10 {
   transition: 0.5s;
+  font-size: 55px;
 }
 
 /* menu bar */

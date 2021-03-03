@@ -15,6 +15,7 @@ let love = document.getElementById("love");
 let construction = document.getElementById("construction");
 let loveYes = document.getElementById("loveYes");
 let loveNo = document.getElementById("loveNo");
+let trail = document.getElementById("trail");
 let position = 1;
 
 background1.addEventListener("click", function () {
@@ -92,10 +93,11 @@ loveNo.addEventListener("mouseover", function () {
 
 loveNo.addEventListener("click", function () {
   alert(":(");
+  trail.classList.add("hidden");
 });
 
 loveYes.addEventListener("click", function () {
-  body.classList.add("mouseHearts");
+  trail.classList.remove("hidden");
 });
 
 $(document).mousemove(function (e) {
