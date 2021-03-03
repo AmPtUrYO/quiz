@@ -10,6 +10,12 @@ let background7 = document.getElementById("background7");
 let background8 = document.getElementById("background8");
 let background9 = document.getElementById("background9");
 let background10 = document.getElementById("background10");
+let heart = document.getElementById("heart");
+let love = document.getElementById("love");
+let construction = document.getElementById("construction");
+let loveYes = document.getElementById("loveYes");
+let loveNo = document.getElementById("loveNo");
+let position = 1;
 
 background1.addEventListener("click", function () {
   document.body.style.backgroundColor = "red";
@@ -49,4 +55,52 @@ background9.addEventListener("click", function () {
 
 background10.addEventListener("click", function () {
   document.body.style.backgroundColor = "rgb(147, 238, 119)";
+});
+
+heart.addEventListener("click", function () {
+  construction.classList.add("hidden");
+  love.classList.remove("hidden");
+});
+
+loveNo.addEventListener("mouseover", function () {
+  switch (position) {
+    case 1:
+      loveNo.classList.add("translate1");
+      position = 2;
+      break;
+    case 2:
+      loveNo.classList.add("translate2");
+      position = 3;
+      break;
+    case 3:
+      loveNo.classList.add("translate3");
+      position = 4;
+      break;
+    case 4:
+      loveNo.classList.add("translate4");
+      position = 5;
+      break;
+    default:
+      loveNo.classList.remove("translate1");
+      loveNo.classList.remove("translate2");
+      loveNo.classList.remove("translate3");
+      loveNo.classList.remove("translate4");
+      position = 1;
+      break;
+  }
+});
+
+loveNo.addEventListener("click", function () {
+  alert(":(");
+});
+
+loveYes.addEventListener("click", function () {
+  body.classList.add("mouseHearts");
+});
+
+$(document).mousemove(function (e) {
+  $(".pointer").css({
+    left: e.pageX,
+    top: e.pageY,
+  });
 });

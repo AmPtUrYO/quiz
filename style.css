@@ -3,6 +3,12 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+.startseite {
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  grid-template-rows: auto;
+}
+
 .background {
   width: 30px;
   height: 30px;
@@ -10,6 +16,18 @@ body {
   margin: 1px;
   position: relative;
   border-radius: 50%;
+}
+
+#construction {
+  height: auto;
+  width: 600px;
+  background-color: none;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
 }
 
 .box {
@@ -21,6 +39,73 @@ body {
 .background:hover {
   transform: scale(1.1);
   cursor: url("/bilder/paintbrush.cur"), pointer;
+}
+
+#love {
+  cursor: pointer;
+}
+
+.translate1 {
+  transform: translate(50px, 50px);
+}
+
+.translate2 {
+  transform: translate(-150px, 150px);
+}
+
+.translate3 {
+  transform: translate(80px, -150px);
+}
+
+.translate4 {
+  transform: translate(-150px, -150px);
+}
+
+.mouseHearts {
+  cursor: wait;
+}
+
+.pointer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+  color: rgb(221, 2, 122);
+}
+.pointer1 {
+  transition: 0.05s;
+}
+.pointer2 {
+  transition: 0.1s;
+}
+.pointer3 {
+  transition: 0.15s;
+}
+.pointer4 {
+  transition: 0.2s;
+}
+.pointer5 {
+  transition: 0.25s;
+}
+.pointer6 {
+  transition: 0.3s;
+}
+.pointer7 {
+  transition: 0.35s;
+}
+.pointer8 {
+  transition: 0.4s;
+}
+.pointer9 {
+  transition: 0.45s;
+}
+.pointer10 {
+  transition: 0.5s;
 }
 
 /* menu bar */
@@ -173,6 +258,7 @@ button {
 
 .mitte {
   text-align: center;
+  align-self: center;
 }
 
 .cmitte {
