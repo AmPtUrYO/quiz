@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
@@ -16,11 +22,316 @@
     </div>
     <div class="rahmen2 hidden">
       <h2 class="mitte">Narcissism</h2>
-      <p></p>
     </div>
-    <div class="rahmen2 hidden">
+    <div class="rahmen2">
       <h2 class="mitte">Logical Fallacies</h2>
-      <p></p>
+      <ul>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse1">The Straw Man Fallacy</li>
+        <div class="collapseListItem collapse" id="collapse1">
+          <p class="justify">
+            This fallacy occurs when your opponent over-simplifies or
+            misrepresents your argument (i.e., setting up a "straw man") to make
+            it easier to attack or refute. Instead of fully addressing your
+            actual argument, speakers relying on this fallacy present a
+            superficially similar -- but ultimately not equal -- version of your
+            real stance, helping them create the illusion of easily defeating
+            you.
+          </p>
+          <p>
+            Example: <br />John: I think we should hire someone to redesign our
+            website. <br />
+            Lola: You're saying we should throw our money away on external
+            resources instead of building up our in-house design team? That's
+            going to hurt our company in the long run.
+          </p>
+        </div>
+        <li class="bold collapseListHead" data-toggle="collapse" data-target="#collapse2">The Bandwagon Fallacy</li>
+        <div class="collapseListItem collapse" id="collapse2">
+          <p class="justify">
+            Just because a significant population of people believe a
+            proposition is true, doesn't automatically make it true. Popularity
+            alone is not enough to validate an argument, though it's often used
+            as a standalone justification of validity. Arguments in this style
+            don't take into account whether or not the population validating the
+            argument is actually qualified to do so, or if contrary evidence
+            exists. While most of us expect to see bandwagon arguments in
+            advertising (e.g., "three out of four people think X brand
+            toothpaste cleans teeth best"), this fallacy can easily sneak it's
+            way into everyday meetings and conversations.
+          </p>
+          <p>
+            Example: <br />
+            The majority of people believe advertisers should spend more money
+            on billboards, so billboards are objectively the best form of
+            advertisement.
+          </p>
+        </div>
+        <li class="bold collapseListHead" data-toggle="collapse" data-target="#collapse3">
+          The Appeal to Authority Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse3">
+          <p class="justify">
+            While appeals to authority are by no means always fallacious, they
+            can quickly become dangerous when you rely too heavily on the
+            opinion of a single person -- especially if that person is
+            attempting to validate something outside of their expertise. Getting
+            an authority figure to back your proposition can be a powerful
+            addition to an existing argument, but it can't be the pillar your
+            entire argument rests on. Just because someone in a position of
+            power believes something to be true, doesn't make it true.
+          </p>
+          <p>
+            Example: <br />
+            Despite the fact that our Q4 numbers are much lower than usual, we
+            should push forward using the same strategy because our CEO Barbara
+            says this is the best approach.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse4">
+          The False Dilemma Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse4">
+          <p class="justify">
+            This common fallacy misleads by presenting complex issues in terms
+            of two inherently opposed sides. Instead of acknowledging that most
+            (if not all) issues can be thought of on a spectrum of possibilities
+            and stances, the false dilemma fallacy asserts that there are only
+            two mutually exclusive outcomes. This fallacy is particularly
+            problematic because it can lend false credence to extreme stances,
+            ignoring opportunities for compromise or chances to re-frame the
+            issue in a new way.
+          </p>
+          <p>
+            Example: <br />
+            We can either agree with Barbara's plan, or just let the project
+            fail. There is no other option.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse5">
+          The Hasty Generalization Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse5">
+          <p class="justify">
+            This fallacy occurs when someone draws expansive conclusions based
+            on inadequate or insufficient evidence. In other words, they jump to
+            conclusions about the validity of a proposition with some -- but not
+            enough -- evidence to back it up, and overlook potential
+            counterarguments.
+          </p>
+          <p>
+            Example: <br />
+            Two members of my team have become more engaged employees after
+            taking public speaking classes. That proves we should have mandatory
+            public speaking classes for the whole company to improve employee
+            engagement.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse6">
+          The Slothful Induction Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse6">
+          <p class="justify">
+            Slothful induction is the exact inverse of the hasty generalization
+            fallacy above. This fallacy occurs when sufficient logical evidence
+            strongly indicates a particular conclusion is true, but someone
+            fails to acknowledge it, instead attributing the outcome to
+            coincidence or something unrelated entirely.
+          </p>
+          <p>
+            Example: <br />
+            Even though every project Brad has managed in the last two years has
+            run way behind schedule, I still think we can chalk it up to
+            unfortunate circumstances, not his project management skills.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse7">
+          The Correlation/Causation Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse7">
+          <p class="justify">
+            If two things appear to be correlated, this doesn't necessarily
+            indicate that one of those things irrefutably caused the other
+            thing. This might seem like an obvious fallacy to spot, but it can
+            be challenging to catch in practice -- particularly when you really
+            want to find a correlation between two points of data to prove your
+            point.
+          </p>
+          <p>
+            Example: <br />
+            Our blog views were down in April. We also changed the color of our
+            blog header in April. This means that changing the color of the blog
+            header led to less views in April.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse8">
+          The Anecdotal Evidence Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse8">
+          <p class="justify">
+            In place of logical evidence, this fallacy substitutes examples from
+            someone's personal experience. Arguments that rely heavily on
+            anecdotal evidence tend to overlook the fact that one (possibly
+            isolated) example can't stand alone as definitive proof of a greater
+            premise.
+          </p>
+          <p>
+            Example: <br />
+            One of our clients doubled their conversions after changing all
+            their landing page text to bright red. Therefore, changing all text
+            to red is a proven way to double conversions.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse9">
+          The Texas Sharpshooter Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse9">
+          <p class="justify">
+            This fallacy gets its colorful name from an anecdote about a Texan
+            who fires his gun at a barn wall, and then proceeds to paint a
+            target around the closest cluster of bullet holes. He then points at
+            the bullet-riddled target as evidence of his expert marksmanship.
+            Speakers who rely on the Texas sharpshooter fallacy tend to
+            cherry-pick data clusters based on a predetermined conclusion.
+            Instead of letting a full spectrum of evidence lead them to a
+            logical conclusion, they find patterns and correlations in support
+            of their goals, and ignore evidence that contradicts them or
+            suggests the clusters weren't actually statistically significant.
+          </p>
+          <p>
+            Example: <br />
+            Lisa sold her first startup to an influential tech company, so she
+            must be a successful entrepreneur. (She ignores the fact that four
+            of her startups have failed since then.)
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse10">
+          The Middle Ground Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse10">
+          <p class="justify">
+            This fallacy assumes that a compromise between two extreme
+            conflicting points is always true. Arguments of this style ignore
+            the possibility that one or both of the extremes could be completely
+            true or false -- rendering any form of compromise between the two
+            invalid as well.
+          </p>
+          <p>
+            Example: <br />
+            Lola thinks the best way to improve conversions is to redesign the
+            entire company website, but John is firmly against making any
+            changes to the website. Therefore, the best approach is to redesign
+            some portions of the website.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse11">
+          The Burden of Proof Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse11">
+          <p class="justify">
+            If a person claims that X is true, it is their responsibility to
+            provide evidence in support of that assertion. It is invalid to
+            claim that X is true until someone else can prove that X is not
+            true. Similarly, it is also invalid to claim that X is true because
+            it's impossible to prove that X is false. In other words, just
+            because there is no evidence presented against something, that
+            doesn't automatically make that thing true.
+          </p>
+          <p>
+            Example: <br />
+            Barbara believes the marketing agency's office is haunted, since no
+            one has ever proven that it isn't haunted.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse12">
+          The Personal Incredulity Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse12">
+          <p class="justify">
+            If you have difficulty understanding how or why something is true,
+            that doesn't automatically mean the thing in question is false. A
+            personal or collective lack of understanding isn't enough to render
+            a claim invalid.
+          </p>
+          <p>
+            Example: <br />
+            I don't understand how redesigning our website resulted in more
+            conversions, so there must have been another factor at play.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse13">
+          The "No True Scotsman" Fallacy
+        </li>
+        <div class="collapseListItem collapse" id="collapse13">
+          <p class="justify">
+            Often used to protect assertions that rely on universal
+            generalizations (like "all Marketers love pie") this fallacy
+            inaccurately deflects counterexamples to a claim by changing the
+            positioning or conditions of the original claim to exclude the
+            counterexample. In other words, instead of acknolwedging that a
+            counterexample to their original claim exists, the speaker ammends
+            the terms of the claim. In the example below, when Barabara presents
+            a valid counterexample to John's claim, John changes the terms of
+            his claim to exclude Barbara's counterexample.
+          </p>
+          <p>
+            Example: <br />
+            John: No marketer would ever put two call-to-actions on a single
+            landing page. <br />
+
+            Barbara: Lola, a marketer, actually found great success putting two
+            call-to-actions on a single landing page for our last campaign.
+            <br />
+
+            John: Well, no true marketer would put two call-to-actions on a
+            single landing page, so Lola must not be a true marketer.
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-toggle="collapse" data-target="#collapse14">The  Tu quoque Fallacy</li>
+        <div class="collapseListItem collapse" id="collapse14">
+          <p class="justify">
+            The tu quoque fallacy (Latin for "you also") is an invalid attempt
+            to discredit an opponent by answering criticism with criticism --
+            but never actually presenting a counterargument to the original
+            disputed claim. In the example below, Lola makes a claim. Instead of
+            presenting evidence against Lola's claim, John levels a claim
+            against Lola. This attack doesn't actually help John succeed in
+            proving Lola wrong, since he doesn't address her original claim in
+            any capacity.
+          </p>
+          <p>
+            Example: <br />
+            Lola: I don't think John would be a good fit to manage this project,
+            because he doesn't have a lot of experience with project management.
+            <br />
+            John: But you don't have a lot of experience in project management
+            either!
+          </p>
+        </div>
+        <li class="bold collapseListHeader" data-target="#collapse15" data-toggle="collapse">The Fallacy Fallacy</li>
+        <div class="collapseListItem collapse" id="collapse15">
+          <p class="justify">
+            Here's something vital to keep in mind when sniffing out fallacies:
+            just because someone's argument relies on a fallacy doesn't
+            necessarily mean that their claim is inherently untrue. Making a
+            fallacy-riddled claim doesn't automatically invalidate the premise
+            of the argument -- it just means the argument doesn't actually
+            validate their premise. In other words, their argument sucks, but
+            they aren't necessarily wrong.
+          </p>
+          <p>
+            Example: <br />
+            John's argument in favor of redesigning the company website clearly
+            relied heavily on cherry-picked statistics in support of his claim,
+            so Lola decided that redesigning the website must not be a good
+            decision.
+          </p>
+        </div>
+      </u collapsel>
+      <p class="references">
+        <a href="https://blog.hubspot.com/marketing/common-logical-fallacies"
+          >Hubspot</a
+        >
+      </p>
     </div>
     <div class="rahmen2">
       <h2 class="mitte">Cold Reading: the Barnum Effect</h2>
@@ -130,4 +441,9 @@
       </p>
     </div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
 </html>

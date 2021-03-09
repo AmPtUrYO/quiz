@@ -337,6 +337,10 @@ button {
   height: 300px;
 }
 
+.collapseListHeader {
+  cursor: pointer;
+}
+
 .rahmen {
   height: 400px;
   width: 600px;
