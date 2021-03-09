@@ -24,7 +24,7 @@
         <li>
           <a href="cv.html">about me</a>
           <ul class="sub">
-            <li><a href="news.html">News</a></li>
+            <li><a href="news.html">News/Blog</a></li>
             <li><a href="favorites.html">Favorites</a></li>
           </ul>
         </li>
@@ -108,16 +108,32 @@
           style="background-color: rgb(147, 238, 119)"
         ></div>
       </div>
-      <div id="construction">
-        <img src="bilder/construction.gif" />
-      </div>
-      <div class="mitte hidden" id="love">
-        <h2>do you love me?</h2>
-        <button id="loveYes">yes</button>
-        <button id="loveNo">no</button>
+      <div class="mitte">
+        <div id="construction">
+          <img src="bilder/construction.gif" />
+        </div>
+        <div class="mitte hidden" id="love">
+          <h2>do you love me?</h2>
+          <button id="loveYes">yes</button>
+          <button id="loveNo">no</button>
+        </div>
+        <div class="mitte hidden" id="toDoList">
+          <h2>What should I do?</h2>
+          <form>
+            <input type="text" id="toDoInput" />
+          </form>
+        </div>
       </div>
       <div class="box">
-        <i class="fa fa-heart fa-2x" aria-hidden="true" id="heart"></i>
+        <i class="fa fa-heart fa-2x" aria-hidden="true" id="heart">
+          <span class="tooltip">Do you love me?</span>
+        </i>
+        <i class="fa fa-check-square-o fa-2x" aria-hidden="true" id="toDo">
+          <span class="tooltip">tell me what to do</span>
+        </i>
+        <i class="fa fa-phone fa-2x" aria-hidden="true" id="phone">
+          <span class="tooltip">tell me your phone number</span>
+        </i>
       </div>
     </div>
     <div class="hidden" id="trail">
@@ -152,6 +168,7 @@
         <i class="fa fa-heart-o" aria-hidden="true"></i>
       </div>
     </div>
+    <div class="hidden" id="toDoList"></div>
   </body>
   <script src="main.js"></script>
 </html>

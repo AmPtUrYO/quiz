@@ -17,6 +17,8 @@ let loveYes = document.getElementById("loveYes");
 let loveNo = document.getElementById("loveNo");
 let trail = document.getElementById("trail");
 let position = 1;
+let toDo = document.getElementById("toDo");
+let toDoList = document.getElementById("toDoList");
 
 background1.addEventListener("click", function () {
   document.body.style.backgroundColor = "red";
@@ -60,6 +62,8 @@ background10.addEventListener("click", function () {
 
 heart.addEventListener("click", function () {
   construction.classList.add("hidden");
+  toDoList.classList.add("hidden");
+
   love.classList.remove("hidden");
 });
 
@@ -105,4 +109,10 @@ $(document).mousemove(function (e) {
     left: e.pageX,
     top: e.pageY,
   });
+});
+
+toDo.addEventListener("click", function () {
+  construction.classList.add("hidden");
+  love.classList.add("hidden");
+  toDoList.classList.remove("hidden");
 });

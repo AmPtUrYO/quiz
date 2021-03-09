@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(147, 238, 119);
+  background-color: rgb(37, 141, 6);
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -34,6 +34,7 @@ body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .background:hover {
@@ -43,6 +44,44 @@ body {
 
 #heart {
   cursor: pointer;
+}
+
+#heart:hover .tooltip {
+  visibility: visible;
+}
+
+#toDo {
+  cursor: pointer;
+}
+
+#toDo:hover .tooltip {
+  visibility: visible;
+}
+
+#phone {
+  cursor: pointer;
+}
+
+#phone:hover .tooltip {
+  visibility: visible;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: auto;
+  background-color: midnightblue;
+  color: bisque;
+  position: absolute;
+  top: -5px;
+  right: 105%;
+  border-radius: 6px;
+}
+
+#toDoInput {
+  height: 30px;
+  width: 250px;
+  border-radius: 20px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .translate1 {
@@ -113,6 +152,18 @@ body {
 .pointer10 {
   transition: 0.5s;
   font-size: 55px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.references {
+  font-size: 8px;
 }
 
 /* menu bar */
