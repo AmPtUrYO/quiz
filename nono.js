@@ -106,7 +106,29 @@ function colors(b) {
 
 function clickFunction(event, row, column) {
   let a = document.getElementById(`cell${row}${column}`); //get ID by row and column
-  //console.log(row, column);
+  let status = {};
+  //status.a;
   event.target;
-  a.style.background = "black";
+  switch (status.a) {
+    case 0:
+      a.style.background = "black";
+      status.a = 1;
+      console.log(status.a);
+      break;
+    case 1:
+      a.style.background = "grey";
+      status.a = 2;
+      console.log(status.a);
+      break;
+    case 2:
+      a.style.background = "blanchedalmond";
+      status.a = 0;
+      console.log(status.a);
+      break;
+    default:
+      a.style.background = "black";
+      status.a = 1;
+      console.log(status.a);
+      break;
+  }
 }
