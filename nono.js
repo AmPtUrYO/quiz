@@ -5,6 +5,7 @@ let numbers = [
   [1, 1, 0, 1, 0],
   [0, 0, 0, 1, 0],
 ];
+let status = {};
 
 function calculateVerticalNumbers(num) {
   var anotherArray = [];
@@ -106,28 +107,28 @@ function colors(b) {
 
 function clickFunction(event, row, column) {
   let a = document.getElementById(`cell${row}${column}`); //get ID by row and column
-  let status = {};
+  let cell = `cell${row}${column}`;
   //status.a;
   event.target;
-  switch (status.a) {
+  switch (status[cell]) {
     case 0:
       a.style.background = "black";
-      status.a = 1;
+      status[cell] = 1;
       console.log(status.a);
       break;
     case 1:
-      a.style.background = "grey";
-      status.a = 2;
+      a.style.background = "white";
+      status[cell] = 2;
       console.log(status.a);
       break;
     case 2:
       a.style.background = "blanchedalmond";
-      status.a = 0;
+      status[cell] = 0;
       console.log(status.a);
       break;
     default:
       a.style.background = "black";
-      status.a = 1;
+      status[cell] = 1;
       console.log(status.a);
       break;
   }
